@@ -50,9 +50,6 @@ INSTALLED_APPS = [
     # internal
     "products",
 ]
-# For render deploy
-if os.environ.get("RENDER"):
-    INSTALLED_APPS.append("render.apps.RenderConfig")
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
